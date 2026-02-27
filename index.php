@@ -40,7 +40,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <section class="hero" id="home">
         <main class="content">
             <h1>Pagi mu dimulai dari secangkir <span>kopi</span></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, natus!</p>
+            <p>temukan biji kopi khas nusantara terbaiku disini</p>
             <a href="#product" class="cta">Beli Sekarang</a>
         </main>
     </section>
@@ -54,8 +54,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
             <div class="content">
                 <h3>kenapa memilih JO.Coffee Roastery?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui sed maiores harum omnis sequi.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed ullam eligendi velit veniam itaque aut blanditiis ea eum accusamus.</p>
+                <p>produk yang kami olah dijamin fresh dan anda akan mendapatkan produk berkualitas tinggi dengan rasa yang khas dan konsisten.</p>
+                <p>setiap pembelian produk JO.Coffee Roastery akan mendapatkan produk yang kurang dari 5 hari tanggal roasting, dijamin kesegaran nya</p>
             </div>
         </div>
     </section>
