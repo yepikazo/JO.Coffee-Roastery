@@ -30,7 +30,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <a href="#product">Product</a>
         </div>
         <div class="navbar-extra">
-            <a href="" id="cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#product" id="cart"><i data-feather="shopping-cart"></i></a>
             <a href="adminPage.php" id="admin"><i data-feather="user"></i></a>
             <a href="" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
