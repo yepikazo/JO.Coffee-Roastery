@@ -83,7 +83,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <p class="product-stock">
                             Stok: <?= $row['stock']; ?>
                         </p>
-                        <a href="#" class="ctabuy">beli sekarang</a>
+                        <a href="pembelian.php?id=<?= $row['id']; ?>" class="ctabuy">beli sekarang</a>
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>

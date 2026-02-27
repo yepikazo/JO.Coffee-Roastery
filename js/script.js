@@ -28,3 +28,31 @@ document.getElementById("imageInput").addEventListener("change", function(event)
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const minusBtn = document.querySelector(".minus");
+    const plusBtn  = document.querySelector(".plus");
+    const qtyInput = document.querySelector("input[name='qty']");
+
+    if (!minusBtn || !plusBtn || !qtyInput) {
+        console.log("Qty button tidak ditemukan.");
+        return;
+    }
+
+    const maxStock = parseInt(qtyInput.max) || 1;
+
+    plusBtn.addEventListener("click", function () {
+        let current = parseInt(qtyInput.value) || 1;
+        if (current < maxStock) {
+            qtyInput.value = current + 1;
+        }
+    });
+
+    minusBtn.addEventListener("click", function () {
+        let current = parseInt(qtyInput.value) || 1;
+        if (current > 1) {
+            qtyInput.value = current - 1;
+        }
+    });
+
+});

@@ -332,6 +332,147 @@ body{
     transform: translateY(-4px);
     box-shadow: 0 12px 25px rgba(182,137,91,0.6);
 }
+/* ===== CHECKOUT SECTION ===== */
+.checkout-section{
+    padding: 12rem 7% 5rem;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+.checkout-container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.checkout-card{
+    display: flex;
+    gap: 3rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(182,137,91,0.3);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.checkout-left{
+    flex: 1;
+    text-align: center;
+}
+
+.checkout-img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.checkout-title{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.checkout-price{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.checkout-stock{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.checkout-right{
+    flex: 1;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.8rem;
+}
+
+.form-group label{
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: 0.9rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-size: 1.3rem;
+}
+
+.form-group textarea{
+    resize: none;
+    height: 100px;
+}
+
+.checkout-btn{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(135deg, #b6895b, #9e734c);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(182,137,91,0.4);
+}
+
+.checkout-btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(182,137,91,0.6);
+}
+
+/* ===== QTY SELECTOR ===== */
+.qty-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 160px;
+}
+
+.qty-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.qty-btn:hover{
+    background: #9e734c;
+    transform: scale(1.1);
+}
+
+.qty-wrapper input{
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
 
 /* Media querries */
 
@@ -401,5 +542,8 @@ body{
 @media (max-width: 768px) {
     html{
         font-size: 55%;
+    }
+    .checkout-card{
+        flex-direction: column;
     }
 }
