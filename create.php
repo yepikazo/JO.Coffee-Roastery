@@ -1,7 +1,7 @@
 <?php
 include 'koneksi.php';
 
-$error = ""; // WAJIB ADA
+$error = "";
 
 if(isset($_POST['submit'])){
 
