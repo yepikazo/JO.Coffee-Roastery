@@ -1,9 +1,12 @@
 <?php
 include 'config/Database.php';
 
-// $stmt = $conn->prepare("SELECT * FROM jo_coffee ORDER BY created_at DESC");
-// $stmt->execute();
-// $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$database = new Database();
+$conn = $database->getConnection();
+
+$stmt = $conn->prepare("SELECT * FROM jo_coffee ORDER BY created_at DESC");
+$stmt->execute();
+$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>

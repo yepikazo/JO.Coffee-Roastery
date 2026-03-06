@@ -27,12 +27,10 @@ if (!empty($data->image) && !empty($data->product_name) && !empty($data->price) 
 
     if ($produk->create()) {
         http_response_code(201); // Created 
-        echo json_encode(array("message" => "Produk berhasil 
-ditambahkan."));
+        echo json_encode(array("message" => "Produk berhasil ditambahkan."));
     } else {
         http_response_code(503); // Service Unavailable 
-        echo json_encode(array("message" => "Gagal menambahkan 
-produk."));
+        echo json_encode(array("message" => "Gagal menambahkan produk."));
     }
 } else {
     http_response_code(400); // Bad Request 
