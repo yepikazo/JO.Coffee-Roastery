@@ -1,9 +1,9 @@
 <?php
-include 'koneksi.php';
+include 'config/Database.php';
 
-$stmt = $conn->prepare("SELECT * FROM jo_coffee ORDER BY created_at DESC");
-$stmt->execute();
-$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $stmt = $conn->prepare("SELECT * FROM jo_coffee ORDER BY created_at DESC");
+// $stmt->execute();
+// $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
